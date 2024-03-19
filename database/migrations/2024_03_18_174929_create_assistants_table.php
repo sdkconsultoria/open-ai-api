@@ -21,9 +21,10 @@ return new class extends Migration
             $table->foreignId('updated_by')->nullable()->constrained('users');
             $table->text('instructions');
             $table->string('name');
-            $table->json('tools');
+            $table->json('tools')->nullable();
             $table->string('model');
             $table->smallInteger('status')->default('20');
+            $table->string('openai_id');
         });
     }
 

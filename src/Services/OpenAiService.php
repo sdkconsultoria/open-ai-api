@@ -8,6 +8,6 @@ abstract class OpenAiService
 
     public function __construct()
     {
-        $this->graph_url .= config('openapi.api_version').'/';
+        $this->graph_url .= config('openai.api_version').'/';
     }
 }
